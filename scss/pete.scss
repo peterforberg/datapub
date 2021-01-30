@@ -1,0 +1,10 @@
+$bg-color: lightgrey;
+
+body {
+    background-color: $bg-color;
+}
+
+div.card button {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
