@@ -4,10 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pete.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/pete.css">
+    <script src="js/script.js"></script>
     <title>good food</title>
   </head>
   <body>
@@ -37,8 +38,14 @@
     </nav>
 
     <div class="container mt-3">
-                <h1>I am not a chef</h1>
-                <p>I don't have a long history with food, aside from its life-sustaining attributes. For most of my life, I never had to prepare food for myself beyond my daily lunches (which for about 10 years consisted of a PB&J, apple sauce, and some cookies) and the occassional breakfast. My mother always cooked for us, and because she <i>did</i> have to cook for herself as a child, she was actually pretty good at it. In fact, between her time working at a Chinese restaurant and a pizzeria, she had become quite the accomplished chef, even on our family's limited budget.</p>
+                <img src="images/mewithscallions.png" id="hatless" onclick="becomeChef()" title="click me!"/>
+                <img src="images/mewithscallions_hat.png" id="hatted" onclick="unbecomeChef()" title="click me!"/>
+                <h1 class="text-center" id="notchef" onclick="becomeChef()">I am not a chef</h1>
+                <h1 class="text-center" id="amchef" onclick="unbecomeChef()">Actually, I am a chef</h1>
+                <div class="center"><button type="button" onclick="becomeChef()">Make me a chef!</button></div>
+                <div class="center" id="minute"></div>
+                <div class="center"><button type="button" onclick="checkTime()">And get a minute!</button></div>
+                <p class="text-justify">I don't have a long history with food, aside from its life-sustaining attributes. For most of my life, I never had to prepare food for myself beyond my daily lunches (which for about 10 years consisted of a PB&J, apple sauce, and some cookies) and the occassional breakfast. My mother always cooked for us, and because she <i>did</i> have to cook for herself as a child, she was actually pretty good at it. In fact, between her time working at a Chinese restaurant and a pizzeria, she had become quite the accomplished chef, even on our family's limited budget.</p>
                 <p>Now that I live on my own, I've had to pick up some of her skills. I really enjoy cooking, and I think it's a good way to unwind after a long day of work (or a nice break in the midst of work). I like to treat cooking as an activity and give it time. While I'm a fairly busy person, I'll make time for cooking because I think it's a disservice to both the ingredients and my body if I just fly through a recipe absentmindedly.</p>
                 <p>Anyways, this site has some recipes and pictures of things that I've cooked recently. I don't often photograph my food, and it's never to be artistic, so these are poor quality photos but high quality recipes. The reason I put this site together is because my original idea was to try and remake one of my favorite site on the web, <a href="http://allaboutfrogs.org/">All About Frogs,</a> but that started taking too long, and I spent way too much time browsing its various fun pages. I hope those parts of the internet are preserved for as long as possible.</p>
             

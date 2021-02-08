@@ -1,3 +1,37 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#hatted {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#hatless {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#amchef {
+  display: none;
+}
+
+p a {
+  color: #007F46;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #007F46;
+}
+
 body {
   background-color: lightgrey;
 }

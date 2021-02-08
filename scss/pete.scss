@@ -1,4 +1,39 @@
 $bg-color: lightgrey;
+$accent-color: #007F46;
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#hatted {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#hatless {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#amchef {
+    display: none;
+}
+
+p a {
+    color: $accent-color;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: $accent-color;
+}
 
 body {
     background-color: $bg-color;
@@ -8,3 +43,4 @@ div.card button {
     text-decoration: none;
     color: rgb(44, 44, 44);
 }
+
