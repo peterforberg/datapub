@@ -1,3 +1,24 @@
+.front-page {
+  border: 5px solid darkgray;
+  background-color: #f7fbf7;
+  width: 50% !important;
+}
+
+@media (max-width: 520px) {
+  .front-page {
+    width: 90% !important;
+  }
+
+  .front-page img {
+    width: 100%;
+  }
+}
+.non-nav {
+  border: none;
+  color: white;
+  background-color: #A7B8A6;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -24,16 +45,20 @@
 }
 
 p a {
-  color: #007F46;
+  color: #A7B8A6;
   text-decoration: none;
 }
 
 p a:hover {
-  color: #007F46;
+  color: #A7B8A6;
 }
 
 body {
-  background-color: lightgrey;
+  background-color: #f7fbf7;
+  background-image: url("/images/background.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 30%;
 }
 
 div.card button {
