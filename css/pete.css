@@ -1,18 +1,14 @@
+#nav-template {
+  background-color: #212529;
+}
+
 .front-page {
   border: 5px solid darkgray;
   background-color: #f7fbf7;
   width: 50% !important;
+  margin: 20px;
 }
 
-@media (max-width: 520px) {
-  .front-page {
-    width: 90% !important;
-  }
-
-  .front-page img {
-    width: 100%;
-  }
-}
 .non-nav {
   border: none;
   color: white;
@@ -59,11 +55,42 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 30%;
+  margin-bottom: 60px;
+  /* Margin bottom by footer height */
 }
 
 div.card button {
   text-decoration: none;
   color: #2c2c2c;
+}
+
+#fixed-footer {
+  position: fixed;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+@media (max-width: 520px) {
+  .front-page {
+    width: 90% !important;
+  }
+
+  .front-page img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #carousel-center {
+    width: 50%;
+    display: flex !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
 }
 
 /*# sourceMappingURL=pete.css.map */

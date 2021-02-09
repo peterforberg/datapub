@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $( "#nav-template" ).load( "nav.html" );
+    });
+
 function becomeChef() {
     var a = document.getElementById("hatted");
         a.style.display = "block";
@@ -26,3 +30,4 @@ function checkTime() {
     const now = new Date();
     selectedElement.innerText = now.getMinutes();
 }
+
