@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/pete.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Leaflet API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <title>APIs</title>
+</head>
+
+<body onload="mapLoad(); loadXML()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">good food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="apis.html">APIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sandbox.html" title="you've found me!"
+                            style="color:#212529">sandbox</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    these are things I have cooked recently
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container justify-content-center align-self-center api-page">
+        <h1 style="margin-top: 20px;">The best chicken on the South Side</h1>
+        <div id="map"></div>
+    
+    <h1 style="margin-top: 20px;">Search for food on Wikipedia</h1>
+    <!-- User input field, requires preventDefault function to stop refresh -->
+    <form id="wikiForm" onsubmit="wikiAPI(); event.preventDefault()">
+        <div class="row">
+            <div class="col">
+                <input id="searchTerm" name="searchTerm" type="text" class="form-control"
+                    placeholder="Enter your search term here...">
+            </div>
+        </div>
+    </form>
+
+    <!-- Button to submit search value and invoke JS function -->
+    <button style="margin-top: 10px; margin-bottom: 5px;" id="wikiButton" type="submit" class="non-nav" onclick="wikiAPI()">Search</button>
+
+    <!-- Output from Wikipedia JS function loads here -->
+    <div class="container" id="wikiContainer" style="margin-bottom: 50px;">
+        <div class="row" id="wiki"></div>
+    </div>
+
+
+    <div id="title"></div>
+    <div id="subtitle"></div>
+
+    <div class="container">
+      <h3 id="projectTitle"></h3>
+      <h4 id="setTitle"></h4>
+      <div id="setDescription"></div>
+      <table class="table table-striped order-table" id="ochreTable">
+        <thead class="thead-dark" id="ochreTableColumns">
+          <tr>
+            <th style="text-align: left; width: 30%">Name</th>
+            <th style="text-align: left; width: 30%">Description</th>
+          </tr>
+        </thead>
+        <tbody id="ochreTableBody">
+        </tbody>
+      </table>
+    </div>
+    <a id="license"></a>
+</div>
+    <nav class="navbar fixed-bottom navbar-expand-lg bg-light text-muted">
+        <div class="container-fluid">
+            <a>peter forberg 2020</a>
+            <span class="navbar-text">
+                <a href="https://www.vectorstock.com/royalty-free-vector/black-and-white-seamless-zig-zag-line-pattern-vector-13194574"
+                    style="text-decoration: none; color: #6c757d;">background from vectorstock</a>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

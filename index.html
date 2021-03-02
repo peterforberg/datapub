@@ -32,6 +32,9 @@
                       <a class="nav-link" href="recipes.html">recipes</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="apis.html">APIs</a>
+                </li>
+                  <li class="nav-item">
                       <a class="nav-link" href="sandbox.html" title="you've found me!" style="color:#212529">sandbox</a>
                   </li>
               </ul>
@@ -50,9 +53,13 @@
                 <div class="center"><button type="button" class="non-nav" onclick="becomeChef()">Make me a chef!</button></div>
                 <div class="center" id="minute"></div>
                 <div class="center"><button type="button" class="non-nav" onclick="checkTime()">And get a minute!</button></div>
-                <p class="text-justify">I don't have a long history with food, aside from its life-sustaining attributes. For most of my life, I never had to prepare food for myself beyond my daily lunches (which for about 10 years consisted of a PB&J, apple sauce, and some cookies) and the occassional breakfast. My mother always cooked for us, and because she <i>did</i> have to cook for herself as a child, she was actually pretty good at it. In fact, between her time working at a Chinese restaurant and a pizzeria, she had become quite the accomplished chef, even on our family's limited budget.</p>
-                <p>Now that I live on my own, I've had to pick up some of her skills. I really enjoy cooking, and I think it's a good way to unwind after a long day of work (or a nice break in the midst of work). I like to treat cooking as an activity and give it time. While I'm a fairly busy person, I'll make time for cooking because I think it's a disservice to both the ingredients and my body if I just fly through a recipe absentmindedly.</p>
-                <p>Anyways, this site has some recipes and pictures of things that I've cooked recently. I don't often photograph my food, and it's never to be artistic, so these are poor quality photos but high quality recipes. The reason I put this site together is because my original idea was to try and remake one of my favorite site on the web, <a href="http://allaboutfrogs.org/">All About Frogs,</a> but that started taking too long, and I spent way too much time browsing its various fun pages. I hope those parts of the internet are preserved for as long as possible.</p>
+                <div class="center"><button type="button" class="non-nav" onclick="foodSort()">Food to cook:</button></div>
+                <ul id="foodList"></ul>
+                <div class="center"><button type="button" class="non-nav" onclick="lastFood()">Last food to cook:</button></div>
+                <p id="lastFood"></p>
+                <div class="first-letter">I</div><p>don't have a long history with food, aside from its life-sustaining attributes. For most of my life, I never had to prepare food for myself beyond my daily lunches (which for about 10 years consisted of a PB&J, apple sauce, and some cookies) and the occassional breakfast. My mother always cooked for us, and because she <i>did</i> have to cook for herself as a child, she was actually pretty good at it. In fact, between her time working at a Chinese restaurant and a pizzeria, she had become quite the accomplished chef, even on our family's limited budget.</p>
+                <div class="first-letter">N</div><p>ow that I live on my own, I've had to pick up some of her skills. I really enjoy cooking, and I think it's a good way to unwind after a long day of work (or a nice break in the midst of work). I like to treat cooking as an activity and give it time. While I'm a fairly busy person, I'll make time for cooking because I think it's a disservice to both the ingredients and my body if I just fly through a recipe absentmindedly.</p>
+                <div class="first-letter">A</div><p>nyways, this site has some recipes and pictures of things that I've cooked recently. I don't often photograph my food, and it's never to be artistic, so these are poor quality photos but high quality recipes. The reason I put this site together is because my original idea was to try and remake one of my favorite site on the web, <a href="http://allaboutfrogs.org/">All About Frogs,</a> but that started taking too long, and I spent way too much time browsing its various fun pages. I hope those parts of the internet are preserved for as long as possible.</p>
             
     </div>
     
