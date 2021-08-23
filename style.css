@@ -1,7 +1,7 @@
 /* general styling */
 
 a {
-    text-decoration: solid underline #756bb1 2.5px;
+    text-decoration: solid underline #3a864d 2.5px;
     color: black;
   }
   
@@ -58,7 +58,12 @@ a {
   .next button {
     opacity: 1;
   }
-  
+    .text h1 {
+      padding: 15px;
+      text-align: center;
+      font-size: 45px;
+    }
+
     .text h2 {
       padding: 15px;
       text-align: center;
